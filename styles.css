@@ -1,0 +1,262 @@
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    color: rgb(75, 75, 75);
+}
+
+img{
+    max-width: 200px;
+    max-height: 200px;
+}
+.img-profile{
+    border-radius: 50%;
+    border: solid 10px  rgba(199, 117, 86, 0.5);
+}
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+p {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: rgb(130, 130, 130);
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+abbr{
+    text-decoration: none;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbtn {
+    margin: 4px 5px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #9f4e2f;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.navbtn:hover{
+    color: #9f4e2f;
+    background: #fff;
+}
+.nav-item{
+    display: inline;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#content.active {
+    width: 100%;
+}
+
+section{
+    padding-top: 5rem;
+}
+div.resume-section-content {
+    max-width: 75rem;
+}
+section.resume-section{
+    border-bottom: 2px solid grey;
+}
+section.resume-section .resume-section-content {
+    align-items: center;
+}
+
+
+h1{
+    font-family: 'Anton', sans-serif;
+    margin-top: 5rem;
+    font-size: 5rem;
+    margin-bottom: 7rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.nameHeading{
+    font-family: 'Saira Stencil One', cursive;
+    text-transform: uppercase;
+    font-size: 8rem;
+    margin-top: 10rem;
+}
+.subheading {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+.introText{
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.dev-icons {
+    font-size: 5rem;
+    margin: 20px auto;
+  }
+.skills{
+    display: block;
+}
+.Skills_Icon{
+    width: 20%;
+    padding: 0px 30px 0px 0px;
+    float: left;
+}
+
+
+/* Education */
+
+.institution{
+    width: 100%;
+    margin: 25px 0px;
+}
+
+.placeEducation{
+    width: 100%;
+}
+.dateEducation{
+    text-align: right;
+    width: 100%;
+}
+
+.NameEducation{
+    font-family: 'Anton', sans-serif;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.degEducation{
+    font-size: 2rem;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {
+    padding: 10px;
+    width: 250px;
+    position: fixed;
+    height: 100vh;
+    z-index: 999;
+    background: #9f4e2f;
+    color: #fff;
+    transition: 0.5s;
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+}
+
+.primary{color:  #9f4e2f;}
+
+.sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #47748b;
+}
+.name{
+    font-weight: bolder;
+    color:  rgba(255, 255, 255, 0.5);
+}
+.sideContent{
+    margin-top: 25%;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    padding:10px 0px;
+    font-size: 1.1em;
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+}
+#sidebar ul li a:hover {
+    color: #9f4e2f;
+    background: #fff;
+}
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+#sidebar.active {
+    margin-left: -250px;
+}
+
+
+/* ---------------------------------------------------
+    Navbar
+----------------------------------------------------- */
+.social-icons{
+    margin: 3px 5px;
+    float: right;
+}
+.social-icon{
+    font-size: 3rem;
+    margin: 10px;
+    color: #9f4e2f;
+}
+.social-icons:hover{
+    color: rgba(199, 117, 86, 0.5);
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
